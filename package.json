@@ -1,0 +1,92 @@
+{
+  "name": "resvg-cli",
+  "type": "module",
+  "version": "2.6.2-beta.1",
+  "packageManager": "pnpm@9.6.0",
+  "description": "A high-performance SVG renderer CLI, powered by resvg-js and Rust based resvg and napi-rs",
+  "license": "MPL-2.0",
+  "homepage": "https://github.com/Zhengqbbb/resvg-cli#readme",
+  "repository": "git@github.com:Zhengqbbb/resvg-cli.git",
+  "bugs": "https://github.com/Zhengqbbb/resvg-cli/issues",
+  "keywords": [
+    "CLI",
+    "resvg",
+    "svg",
+    "node-resvg",
+    "resvg-js",
+    "resvg-node",
+    "rust",
+    "svg2png",
+    "svg2img",
+    "svg to png"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "resvg-cli": "bin/resvg-cli.mjs",
+    "resvg-js": "bin/resvg-cli.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "scripts": {
+    "x": "resvg-cli",
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "cz": "czg",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "vitest",
+    "postinstall": "simple-git-hooks",
+    "prepack": "run-s lint build",
+    "release": "run-s release:bump release:publish",
+    "release:bump": "bumpp --all -c 'build: :bookmark: publish v%s'",
+    "release:publish": "pnpm publish",
+    "release:next": "bumpp --no-commit --no-push --no-tag && pnpm publish --tag next --no-git-checks"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.23.1",
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.14.11",
+    "bumpp": "^9.4.1",
+    "cz-git": "^1.9.4",
+    "czg": "^1.9.4",
+    "eslint": "^9.7.0",
+    "lint-staged": "^15.2.7",
+    "minimist": "^1.2.8",
+    "npm-run-all2": "^6.2.2",
+    "pnpm": "^9.6.0",
+    "resvg-cli": "workspace:*",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.2.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^2.0.4"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "eslint": "9"
+      }
+    }
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged && pnpm lint"
+  },
+  "lint-staged": {
+    "*.ts": "eslint --fix"
+  }
+}
