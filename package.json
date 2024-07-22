@@ -1,7 +1,7 @@
 {
   "name": "resvg-cli",
   "type": "module",
-  "version": "2.6.2-beta.3",
+  "version": "2.6.2",
   "packageManager": "pnpm@9.6.0",
   "description": "A high-performance SVG renderer CLI, powered by resvg-js and Rust based resvg and napi-rs",
   "license": "MPL-2.0",
