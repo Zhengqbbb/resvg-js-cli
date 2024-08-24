@@ -7,7 +7,6 @@ export default defineConfig(
             entry: ['./src/cli.ts'],
             format: 'esm',
             outDir: './dist',
-            splitting: true,
             bundle: true,
             external: ['@resvg/resvg-js'],
             outExtension: ({ format }) =>

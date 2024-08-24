@@ -14,16 +14,16 @@ body:
         - label: I am using the **latest version**
           required: true
 
-        - label: I have searched [README](https://github.com/Zhengqbbb/resvg-cli#README)
+        - label: I have searched [README](https://github.com/Zhengqbbb/resvg-js-cli#README)
           required: true
 
   - type: textarea
     id: system-info
     attributes:
       label: 📄 System Info
-      description: Output of `npx envinfo --system --binaries --npmPackages resvg-cli --npmGlobalPackages resvg-cli`
+      description: Output of `npx envinfo --system --binaries --npmPackages @resvg/resvg-js-cli --npmGlobalPackages @resvg/resvg-js-cli`
       render: Shell
-      placeholder: System, Binaries, Terminal, resvg-cli --version
+      placeholder: System, Binaries, Terminal, @resvg/resvg-js-cli --version
     validations:
       required: true
 

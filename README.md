@@ -1,7 +1,7 @@
-<h1 align="center">resvg-cli</h1>
+<h1 align="center">@resvg/resvg-js-cli</h1>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/npm/v/resvg-cli?color=212121&label=">
+  <img alt="version" src="https://img.shields.io/npm/v/@resvg/resvg-js-cli?color=212121&label=">
 </p>
 
 <p align="center">
@@ -10,36 +10,33 @@
 
 > [resvg-js](https://github.com/yisibl/resvg-js): a high-performance SVG renderer and toolkit, powered by Rust based [resvg](https://github.com/RazrFalcon/resvg/), with Node.js backend using [napi-rs](https://github.com/napi-rs/napi-rs), also a pure WebAssembly backend.
 
-> [!NOTE]
-> Currently in PR status, awaiting review and merge into the official main branch of `@resvg/resvg-js`. [yisibl/resvg-js#349](https://github.com/yisibl/resvg-js/pull/349)
-
 ## Installation
 
 ### Direct Use
 
 ```sh
-npx resvg-cli --help
+npx @resvg/resvg-js-cli --help
 # or
-bunx resvg-cli --help
+bunx @resvg/resvg-js-cli --help
 ```
 
 ### Global Install
 
 ```sh
-npm install -g resvg-cli
+npm install -g @resvg/resvg-js-cli
 resvg-js --help
 ```
 
 ## Usage
 
 ```sh
-$ npx resvg-cli --help
+$ npx @resvg/resvg-js-cli --help
 
 NAME:
     resvg-js - A high-performance SVG renderer CLI, powered by resvg-js and Rust based resvg and napi-rs
 
 WEBSITE:
-    https://github.com/Zhengqbbb/resvg-cli
+    https://github.com/Zhengqbbb/resvg-js-cli
     https://github.com/yisibl/resvg-js
 
 VERSION: 2.6.1

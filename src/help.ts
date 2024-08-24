@@ -36,11 +36,11 @@ export interface CLIOptions {
 /* prettier-ignore */
 export function printHelp(version: string) {
     console.info(
-    `${pc.yellow('NAME:')}
+        `${pc.yellow('NAME:')}
     ${pc.green('resvg-js')} - A high-performance SVG renderer CLI, powered by resvg-js and Rust based resvg and napi-rs
 
 ${pc.yellow('WEBSITE:')}
-    ${pc.underline('https://github.com/Zhengqbbb/resvg-cli')}
+    ${pc.underline('https://github.com/Zhengqbbb/resvg-js-cli')}
     ${pc.underline('https://github.com/yisibl/resvg-js')}
 
 ${pc.yellow('VERSION:')} ${version}

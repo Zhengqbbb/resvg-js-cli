@@ -2,7 +2,7 @@ import { readFile, writeFile } from 'node:fs/promises'
 import process from 'node:process'
 import minimist from 'minimist'
 import { Resvg } from '@resvg/resvg-js'
-import { version } from 'resvg-cli/package.json'
+import { version } from '../package.json'
 import type { CLIOptions } from './help'
 import { printHelp } from './help'
 import { transformOptions, transformPaths } from './option'
@@ -19,7 +19,7 @@ process.on('SIGINT', () => {
 
 export type ParsedArgs = CLIOptions & minimist.ParsedArgs
 
-export async function bootsrap(argvs = process.argv) {
+export async function main(argvs = process.argv) {
     const parsedArgv: ParsedArgs = minimist<CLIOptions>(argvs.slice(2, argvs.length), {
         alias: {
             v: 'version',
@@ -73,7 +73,7 @@ export async function bootsrap(argvs = process.argv) {
     }
 }
 
-bootsrap()
+main()
     .then(() => {
         process.exit(0)
     })

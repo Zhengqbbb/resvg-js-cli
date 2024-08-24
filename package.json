@@ -1,13 +1,13 @@
 {
-  "name": "resvg-cli",
+  "name": "@resvg/resvg-js-cli",
   "type": "module",
   "version": "2.6.2",
-  "packageManager": "pnpm@9.6.0",
+  "packageManager": "pnpm@9.8.0",
   "description": "A high-performance SVG renderer CLI, powered by resvg-js and Rust based resvg and napi-rs",
   "license": "MPL-2.0",
-  "homepage": "https://github.com/Zhengqbbb/resvg-cli#readme",
-  "repository": "git@github.com:Zhengqbbb/resvg-cli.git",
-  "bugs": "https://github.com/Zhengqbbb/resvg-cli/issues",
+  "homepage": "https://github.com/Zhengqbbb/resvg-js-cli#readme",
+  "repository": "git@github.com:Zhengqbbb/resvg-js-cli.git",
+  "bugs": "https://github.com/Zhengqbbb/resvg-js-cli/issues",
   "keywords": [
     "CLI",
     "resvg",
@@ -32,15 +32,15 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "bin": {
-    "resvg-cli": "bin/resvg-cli.mjs",
-    "resvg-js": "bin/resvg-cli.mjs"
+    "resvg-js-cli": "bin/resvg-js-cli.mjs",
+    "resvg-js": "bin/resvg-js-cli.mjs"
   },
   "files": [
     "bin",
     "dist"
   ],
   "scripts": {
-    "x": "resvg-cli",
+    "x": "resvg-js-cli",
     "dev": "tsup --watch",
     "build": "tsup",
     "cz": "czg",
@@ -58,23 +58,23 @@
     "@resvg/resvg-js": "^2.6.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.23.1",
+    "@antfu/eslint-config": "^2.27.1",
+    "@resvg/resvg-js-cli": "workspace:*",
     "@types/minimist": "^1.2.5",
-    "@types/node": "^20.14.11",
-    "bumpp": "^9.4.1",
+    "@types/node": "^20.16.1",
+    "bumpp": "^9.5.2",
     "cz-git": "^1.9.4",
     "czg": "^1.9.4",
-    "eslint": "^9.7.0",
-    "lint-staged": "^15.2.7",
+    "eslint": "^9.9.1",
+    "lint-staged": "^15.2.9",
     "minimist": "^1.2.8",
     "npm-run-all2": "^6.2.2",
-    "pnpm": "^9.6.0",
-    "resvg-cli": "workspace:*",
+    "pnpm": "^9.8.0",
     "simple-git-hooks": "^2.11.1",
-    "tsup": "^8.2.2",
-    "tsx": "^4.16.2",
-    "typescript": "^5.5.3",
-    "vitest": "^2.0.4"
+    "tsup": "^8.2.4",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4",
+    "vitest": "^2.0.5"
   },
   "pnpm": {
     "peerDependencyRules": {
