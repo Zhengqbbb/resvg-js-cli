@@ -1,16 +1,25 @@
 <h1 align="center">@resvg/resvg-js-cli</h1>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/npm/v/@resvg/resvg-js-cli?color=212121&label=">
+    <a href="https://www.npmjs.com/package/@resvg/resvg-js-cli">
+        <img alt="version" src="https://img.shields.io/npm/v/@resvg/resvg-js-cli?color=212121&label=">
+    </a>
 </p>
 
 <p align="center">
-    CLI entry for the <a href="https://www.npmjs.com/package/@resvg/resvg-js">@resvg/resvg-js</a> package. <br>A high-performance SVG renderer CLI, powered by <a href="https://github.com/yisibl/resvg-js">resvg-js</a>.
+    CLI entry for the <a href="https://www.npmjs.com/package/@resvg/resvg-js">@resvg/resvg-js</a> package. <br><b>A high-performance SVG renderer CLI</b>, powered by <a href="https://github.com/yisibl/resvg-js">resvg-js</a>.
 </p>
 
 > [resvg-js](https://github.com/yisibl/resvg-js): a high-performance SVG renderer and toolkit, powered by Rust based [resvg](https://github.com/RazrFalcon/resvg/), with Node.js backend using [napi-rs](https://github.com/napi-rs/napi-rs), also a pure WebAssembly backend.
 
 ## Installation
+
+### Try It Now
+
+```sh
+curl https://cdn.jsdelivr.net/gh/yisibl/resvg-js@v2.6.2/example/text.svg | \
+    npx @resvg/resvg-js-cli --background "#fff" - text.png
+```
 
 ### Direct Use
 
@@ -38,8 +47,6 @@ NAME:
 WEBSITE:
     https://github.com/Zhengqbbb/resvg-js-cli
     https://github.com/yisibl/resvg-js
-
-VERSION: 2.6.1
 
 SYNOPSIS:
     resvg-js [OPTIONS] <input_svg_path> [output_path]   # If empty output_path. The raw data of image to stdout
