@@ -18,7 +18,7 @@
 
 ```sh
 curl https://cdn.jsdelivr.net/gh/yisibl/resvg-js@v2.6.2/example/text.svg | \
-    npx @resvg/resvg-js-cli --background "#fff" - text.png
+    npx @resvg/resvg-js-cli --background "#fff" - output.png
 ```
 
 ### Direct Use
@@ -106,6 +106,12 @@ EXAMPLES:
         ./input.svg ./output.png
   $ cat a.svg | resvg-js --fit-width 1200 --image-rending 0 - output.png
 ```
+
+## Related Links
+
+- [@resvg/resvg-js](https://www.npmjs.com/package/@resvg/resvg-js)
+- [@resvg/resvg-wasm](https://www.npmjs.com/package/@resvg/resvg-wasm)
+- [x-satori](https://www.npmjs.com/package/x-satori)
 
 ## Contributing
 
